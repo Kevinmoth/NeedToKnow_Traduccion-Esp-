@@ -8,81 +8,79 @@ Thanks a bunch!
 
 NEEDTOKNOW = {};
 
--- Define defaults in enUS
-    NEEDTOKNOW.BAR_TOOLTIP1 = "NeedToKnow";
-    NEEDTOKNOW.BAR_TOOLTIP2 = "Right click bars to configure. More options in the Blizzard interface options menu. Type /needtoknow to lock and enable.";
+-- Define valores predeterminados en enUS
+NEEDTOKNOW.BAR_TOOLTIP1 = "NeedToKnow";
+NEEDTOKNOW.BAR_TOOLTIP2 = "Haz clic derecho en las barras para configurarlas. Más opciones en el menú de opciones de la interfaz de Blizzard. Escribe /needtoknow para bloquear y habilitar.";
 
-    NEEDTOKNOW.RESIZE_TOOLTIP = "Click and drag to change size";
+NEEDTOKNOW.RESIZE_TOOLTIP = "Haz clic y arrastra para cambiar el tamaño";
 
-    NEEDTOKNOW.BARMENU_ENABLE = "Enable bar";
-    NEEDTOKNOW.BARMENU_CHOOSENAME = "Choose buff/debuff to time";
-    NEEDTOKNOW.CHOOSENAME_DIALOG = "Enter the name of the buff or debuff to time with this bar"
-    NEEDTOKNOW.CHOOSE_OVERRIDE_TEXT = "Normally, the name of the aura/item/spell that activated the bar is displayed.  By entering text here, you can override that text with something else.  Leave this blank to use the default behavior."
-    NEEDTOKNOW.BARMENU_CHOOSEUNIT = "Unit to monitor";
-    NEEDTOKNOW.BARMENU_PLAYER = "Player";
-    NEEDTOKNOW.BARMENU_TARGET = "Target";
-    NEEDTOKNOW.BARMENU_FOCUS = "Focus";
-    NEEDTOKNOW.BARMENU_PET = "Pet";
-    NEEDTOKNOW.BARMENU_VEHICLE = "Vehicle";
-    NEEDTOKNOW.BARMENU_TARGETTARGET = "Target of Target";
-    NEEDTOKNOW.BARMENU_BUFFORDEBUFF = "Bar Type";
-    NEEDTOKNOW.BARMENU_SPELLID = "Use SpellID";
-    NEEDTOKNOW.BARMENU_HELPFUL = "Buff";
-    NEEDTOKNOW.BARMENU_HARMFUL = "Debuff";
-    NEEDTOKNOW.BARMENU_ONLYMINE = "Only show if cast by self";
-    NEEDTOKNOW.BARMENU_BARCOLOR = "Bar color";
-    NEEDTOKNOW.BARMENU_CLEARSETTINGS = "Clear settings";
+NEEDTOKNOW.BARMENU_ENABLE = "Habilitar barra";
+NEEDTOKNOW.BARMENU_CHOOSENAME = "Elegir beneficio/perjuicio a temporizar";
+NEEDTOKNOW.CHOOSENAME_DIALOG = "Ingresa el nombre del beneficio o perjuicio para temporizar con esta barra.";
+NEEDTOKNOW.CHOOSE_OVERRIDE_TEXT = "Normalmente, se muestra el nombre del aura/objeto/hechizo que activó la barra. Al ingresar texto aquí, puedes reemplazar ese texto con otra cosa. Deja esto en blanco para usar el comportamiento predeterminado.";
+NEEDTOKNOW.BARMENU_CHOOSEUNIT = "Unidad a monitorear";
+NEEDTOKNOW.BARMENU_PLAYER = "Jugador";
+NEEDTOKNOW.BARMENU_TARGET = "Objetivo";
+NEEDTOKNOW.BARMENU_FOCUS = "Foco";
+NEEDTOKNOW.BARMENU_PET = "Mascota";
+NEEDTOKNOW.BARMENU_VEHICLE = "Vehículo";
+NEEDTOKNOW.BARMENU_TARGETTARGET = "Objetivo del objetivo";
+NEEDTOKNOW.BARMENU_BUFFORDEBUFF = "Tipo de Barra";
+NEEDTOKNOW.BARMENU_SPELLID = "Usar ID de hechizo";
+NEEDTOKNOW.BARMENU_HELPFUL = "Beneficio";
+NEEDTOKNOW.BARMENU_HARMFUL = "Perjuicio";
+NEEDTOKNOW.BARMENU_ONLYMINE = "Mostrar solo si lanzado por mí";
+NEEDTOKNOW.BARMENU_BARCOLOR = "Color de la barra";
+NEEDTOKNOW.BARMENU_CLEARSETTINGS = "Limpiar ajustes";
 
-    NEEDTOKNOW.UIPANEL_SUBTEXT1 = "These options allow you to customize NeedToKnow's timer bars.";
---    NEEDTOKNOW.UIPANEL_SUBTEXT2 = "Bars work when locked. When unlocked, you can move/size bar groups and right click individual bars for more settings. You can also type '/needtoknow' or '/ntk' to lock/unlock.";
-    NEEDTOKNOW.UIPANEL_BARGROUP = "Group ";
-    NEEDTOKNOW.UIPANEL_NUMBERBARS = "Number of bars";
-    NEEDTOKNOW.UIPANEL_FIXEDDURATION = "Max bar duration";
-    NEEDTOKNOW.UIPANEL_LOCK = "Lock";
-    NEEDTOKNOW.UIPANEL_UNLOCK = "Unlock";
-    NEEDTOKNOW.UIPANEL_TOOLTIP_ENABLEGROUP = "Show and enable this group of bars";
-    NEEDTOKNOW.UIPANEL_TOOLTIP_FIXEDDURATION = "Set the maximum length of bars for this group (in seconds).  Leave empty to set dynamically per bar.";
-    NEEDTOKNOW.UIPANEL_TOOLTIP_BARTEXTURE = "Choose the texture graphic for timer bars";
-    NEEDTOKNOW.CMD_RESET = "reset";
+NEEDTOKNOW.UIPANEL_SUBTEXT1 = "Estas opciones te permiten personalizar las barras temporizadoras de NeedToKnow.";
+NEEDTOKNOW.UIPANEL_BARGROUP = "Grupo ";
+NEEDTOKNOW.UIPANEL_NUMBERBARS = "Número de barras";
+NEEDTOKNOW.UIPANEL_FIXEDDURATION = "Duración máxima de la barra";
+NEEDTOKNOW.UIPANEL_LOCK = "Bloquear";
+NEEDTOKNOW.UIPANEL_UNLOCK = "Desbloquear";
+NEEDTOKNOW.UIPANEL_TOOLTIP_ENABLEGROUP = "Mostrar y habilitar este grupo de barras";
+NEEDTOKNOW.UIPANEL_TOOLTIP_FIXEDDURATION = "Establecer la duración máxima de las barras de este grupo (en segundos). Dejar vacío para configurar dinámicamente por barra.";
+NEEDTOKNOW.UIPANEL_TOOLTIP_BARTEXTURE = "Elige la textura gráfica para las barras temporizadoras";
+NEEDTOKNOW.CMD_RESET = "reset";
 
-	NEEDTOKNOW.UIPANEL_CONFIGMODE = "Config mode";
-	NEEDTOKNOW.UIPANEL_CONFIGMODE_TOOLTIP = "Unlock timer bars and make them configurable";
-	NEEDTOKNOW.UIPANEL_PLAYMODE = "Play mode";
-	NEEDTOKNOW.UIPANEL_PLAYMODE_TOOLTIP = "Lock and enable timer bars, making them click-through";
+NEEDTOKNOW.UIPANEL_CONFIGMODE = "Modo de configuración";
+NEEDTOKNOW.UIPANEL_CONFIGMODE_TOOLTIP = "Desbloquea las barras temporizadoras y permíteles ser configuradas";
+NEEDTOKNOW.UIPANEL_PLAYMODE = "Modo de reproducción";
+NEEDTOKNOW.UIPANEL_PLAYMODE_TOOLTIP = "Bloquea y habilita las barras temporizadoras, haciéndolas 'clickeables'";
 
-    NEEDTOKNOW.UIPANEL_APPEARANCE = "Appearance";
-    NEEDTOKNOW.UIPANEL_BACKGROUNDCOLOR = "Background color";
-    NEEDTOKNOW.UIPANEL_BARSPACING = "Bar spacing";
-    NEEDTOKNOW.UIPANEL_BARPADDING = "Bar padding";
-    NEEDTOKNOW.UIPANEL_BARTEXTURE = "Bar texture";
-    NEEDTOKNOW.UIPANEL_BARFONT = "Bar font";
-    NEEDTOKNOW.UIPANEL_FONT = "Font";
+NEEDTOKNOW.UIPANEL_APPEARANCE = "Apariencia";
+NEEDTOKNOW.UIPANEL_BACKGROUNDCOLOR = "Color de fondo";
+NEEDTOKNOW.UIPANEL_BARSPACING = "Espacio entre barras";
+NEEDTOKNOW.UIPANEL_BARPADDING = "Relleno de barras";
+NEEDTOKNOW.UIPANEL_BARTEXTURE = "Textura de la barra";
+NEEDTOKNOW.UIPANEL_BARFONT = "Fuente de la barra";
+NEEDTOKNOW.UIPANEL_FONT = "Fuente";
 
-    NEEDTOKNOW.BARMENU_TOTEM = "Totem";
-    NEEDTOKNOW.BARMENU_CASTCD = "Spell Cooldown";
-    NEEDTOKNOW.BARMENU_BUFFCD = "Internal Cooldown";
-    NEEDTOKNOW.BARMENU_USABLE = "Spell Usable";
-    NEEDTOKNOW.CMD_HIDE = "hide";
-    NEEDTOKNOW.CMD_SHOW = "show";
-    NEEDTOKNOW.BARMENU_TIMEFORMAT = "Time Format"; 
-    NEEDTOKNOW.FMT_SINGLEUNIT = "Single unit (2 m)";
-    NEEDTOKNOW.FMT_TWOUNITS = "Minutes and seconds (01:10)";
-    NEEDTOKNOW.FMT_FLOAT = "Fractional Seconds (70.1)";
-    NEEDTOKNOW.BARMENU_VISUALCASTTIME = "Visual Cast Time";
-    NEEDTOKNOW.BARMENU_VCT_ENABLE = "Enable for this bar";
-    NEEDTOKNOW.BARMENU_VCT_COLOR = "Overlay color";
-    NEEDTOKNOW.BARMENU_VCT_SPELL = "Choose cast time by spell";
-    NEEDTOKNOW.BARMENU_VCT_EXTRA = "Set additional time";
-    NEEDTOKNOW.BARMENU_MAIN_HAND = "Main Hand";
-    NEEDTOKNOW.BARMENU_OFF_HAND = "Off Hand";
-    NEEDTOKNOW.CHOOSE_VCT_SPELL_DIALOG = "Enter the name of a spell (in your spellbook) whose cast time will determine the base length of the visual cast time.  If left blank, the aura name will be used as the spell name.  To force this to be 0, type 0.";
-    NEEDTOKNOW.CHOOSE_VCT_EXTRA_DIALOG = "Enter an amount of seconds that will be added to the cast time of the spell.  Ex: 1.5";
-    NEEDTOKNOW.CHOOSE_BLINK_TITLE_DIALOG = "Enter the text to display on the bar when it is blinking.";
-    NEEDTOKNOW.BUFFCD_DURATION_DIALOG = "Enter the cooldown duration triggered by the buffs watched by this bar.";
-    NEEDTOKNOW.USABLE_DURATION_DIALOG = "Enter the cooldown duration triggered by the abilities watched by this bar.";
-    
+NEEDTOKNOW.BARMENU_TOTEM = "Tótem";
+NEEDTOKNOW.BARMENU_CASTCD = "Tiempo de Reutilización del Hechizo";
+NEEDTOKNOW.BARMENU_BUFFCD = "Tiempo de Reutilización Interno";
+NEEDTOKNOW.BARMENU_USABLE = "Hechizo Utilizable";
+NEEDTOKNOW.CMD_HIDE = "ocultar";
+NEEDTOKNOW.CMD_SHOW = "mostrar";
+NEEDTOKNOW.BARMENU_TIMEFORMAT = "Formato de Tiempo";
+NEEDTOKNOW.FMT_SINGLEUNIT = "Unidad única (2 m)";
+NEEDTOKNOW.FMT_TWOUNITS = "Minutos y segundos (01:10)";
+NEEDTOKNOW.FMT_FLOAT = "Segundos Fraccionales (70.1)";
+NEEDTOKNOW.BARMENU_VISUALCASTTIME = "Tiempo de Lanzamiento Visual";
+NEEDTOKNOW.BARMENU_VCT_ENABLE = "Habilitar para esta barra";
+NEEDTOKNOW.BARMENU_VCT_COLOR = "Color de superposición";
+NEEDTOKNOW.BARMENU_VCT_SPELL = "Elegir tiempo de lanzamiento por hechizo";
+NEEDTOKNOW.BARMENU_VCT_EXTRA = "Establecer tiempo adicional";
+NEEDTOKNOW.BARMENU_MAIN_HAND = "Mano Principal";
+NEEDTOKNOW.BARMENU_OFF_HAND = "Mano Secundaria";
+NEEDTOKNOW.CHOOSE_VCT_SPELL_DIALOG = "Ingresa el nombre de un hechizo (en tu libro de hechizos) cuyo tiempo de lanzamiento determinará la longitud base del tiempo de lanzamiento visual. Si se deja en blanco, se usará el nombre del aura como nombre del hechizo. Para forzar que sea 0, escribe 0.";
+NEEDTOKNOW.CHOOSE_VCT_EXTRA_DIALOG = "Ingresa una cantidad de segundos que se añadirán al tiempo de lanzamiento del hechizo. Ej: 1.5";
+NEEDTOKNOW.CHOOSE_BLINK_TITLE_DIALOG = "Ingresa el texto a mostrar en la barra cuando esté parpadeando.";
+NEEDTOKNOW.BUFFCD_DURATION_DIALOG = "Ingresa la duración de reutilización activada por los beneficios observados por esta barra.";
+NEEDTOKNOW.USABLE_DURATION_DIALOG = "Ingresa la duración de reutilización activada por las habilidades observadas por esta barra.";
 
--- replace with translations, if available
+-- Reemplaza con traducciones, si están disponibles
 if ( GetLocale() == "deDE" ) then
     -- by sp00n and Fxfighter EU-Echsenkessel
     NEEDTOKNOW.BAR_TOOLTIP1 = "NeedToKnow"; 
