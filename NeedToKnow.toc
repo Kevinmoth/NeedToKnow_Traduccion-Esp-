@@ -1,6 +1,6 @@
 ## Interface: 30300
 ## X-Compatible-With: 40000
-## Title: NeedToKnow
+## Title: NeedToKnow [|cffb1997fMatecitos|r]
 ## Author: Kitjan, lieandswell
 ## Version: 3.1.7
 ## Notes: Timer bars for buffs, debuffs, cooldowns, etc. 
