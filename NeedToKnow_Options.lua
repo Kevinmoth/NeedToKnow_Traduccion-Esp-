@@ -315,12 +315,12 @@ NeedToKnow.BarMenu_MoreOptions = {
     { VariableName = "Enabled", MenuText = NEEDTOKNOW.BARMENU_ENABLE },
     { VariableName = "AuraName", MenuText = NEEDTOKNOW.BARMENU_CHOOSENAME, Type = "Dialog", DialogText = "CHOOSENAME_DIALOG" },
     { VariableName = "BuffOrDebuff", MenuText = NEEDTOKNOW.BARMENU_BUFFORDEBUFF, Type = "Submenu" },
-    { VariableName = "Options", MenuText = "Settings", Type = "Submenu" },
+    { VariableName = "Options", MenuText = "Ajustes", Type = "Submenu" },
     {},
     { VariableName = "TimeFormat", MenuText = NEEDTOKNOW.BARMENU_TIMEFORMAT, Type = "Submenu" }, 
     { VariableName = "Show", MenuText = "Show...", Type = "Submenu" }, -- FIXME: Localization
     { VariableName = "VisualCastTime", MenuText = NEEDTOKNOW.BARMENU_VISUALCASTTIME, Type = "Submenu" },
-    { VariableName = "BlinkSettings", MenuText = "Blink Settings", Type = "Submenu" }, -- FIXME: Localization
+    { VariableName = "BlinkSettings", MenuText = "Ajustes de parpadeo", Type = "Submenu" }, -- FIXME: Localization
     { VariableName = "BarColor", MenuText = NEEDTOKNOW.BARMENU_BARCOLOR, Type = "Color" },
 }
 
@@ -351,9 +351,9 @@ NeedToKnow.BarMenu_SubMenus = {
     },
     Opt_HELPFUL = {
       { VariableName = "Unit", MenuText = NEEDTOKNOW.BARMENU_CHOOSEUNIT, Type = "Submenu" },
-      { VariableName = "bDetectExtends", MenuText = "Track duration increases" }, -- FIXME: Localization
+      { VariableName = "bDetectExtends", MenuText = "Seguir aumentos de duración" }, -- FIXME: Localization
       { VariableName = "OnlyMine", MenuText = NEEDTOKNOW.BARMENU_ONLYMINE },
-      { VariableName = "show_all_stacks", MenuText = "Sum stacks from all casters" },
+      { VariableName = "show_all_stacks", MenuText = "Sumar acumulaciones de todos los casters" },
     },
     Opt_TOTEM = {},
     Opt_CASTCD = 
@@ -377,20 +377,21 @@ NeedToKnow.BarMenu_SubMenus = {
         { VariableName = "vct_extra", MenuText = NEEDTOKNOW.BARMENU_VCT_EXTRA, Type = "Dialog", DialogText = "CHOOSE_VCT_EXTRA_DIALOG", Numeric=true },
     },
     Show = {
-        { VariableName = "show_icon", MenuText = "Icon" },
-        { VariableName = "show_text", MenuText = "Aura Name" },
-        { VariableName = "show_count", MenuText = "Stack Count" },
-        { VariableName = "show_time", MenuText = "Time Remaining" },
-        { VariableName = "show_spark", MenuText = "Spark" },
-        { VariableName = "show_mypip", MenuText = "Indicator if mine" },
-        { VariableName = "show_text_user", MenuText = "Override Aura Name", Type = "Dialog", DialogText = "CHOOSE_OVERRIDE_TEXT", Checked = function(settings) return "" ~= settings.show_text_user end },
+        { VariableName = "show_icon", MenuText = "Icono" },
+        { VariableName = "show_text", MenuText = "Nombre del Aura" },
+        { VariableName = "show_count", MenuText = "Conteo de Acumulaciones" },
+        { VariableName = "show_time", MenuText = "Tiempo Restante" },
+        { VariableName = "show_spark", MenuText = "Destello" },
+        { VariableName = "show_mypip", MenuText = "Indicador si es mío" },
+        { VariableName = "show_text_user", MenuText = "Anular Nombre del Aura", Type = "Dialog", DialogText = "CHOOSE_OVERRIDE_TEXT", Checked = function(settings) return "" ~= settings.show_text_user end },
     },
+    
     BlinkSettings = {
         { VariableName = "blink_enabled", MenuText = NEEDTOKNOW.BARMENU_VCT_ENABLE },
-        { VariableName = "blink_label", MenuText = "Bar text while blinking...", Type = "Dialog", DialogText="CHOOSE_BLINK_TITLE_DIALOG" }, 
-        { VariableName = "MissingBlink", MenuText = "Bar color when blinking...", Type = "Color" }, -- FIXME: Localization
-        { VariableName = "blink_ooc", MenuText = "Blink out of combat" }, -- FIXME: Localization
-        { VariableName = "blink_boss", MenuText = "Blink only for bosses" }, -- FIXME: Localization
+        { VariableName = "blink_label", MenuText = "Texto de la barra mientras parpadea...", Type = "Dialog", DialogText = "CHOOSE_BLINK_TITLE_DIALOG" },
+        { VariableName = "MissingBlink", MenuText = "Color de la barra al parpadear...", Type = "Color" }, -- FIXME: Localización
+        { VariableName = "blink_ooc", MenuText = "Parpadear fuera de combate" }, -- FIXME: Localización
+        { VariableName = "blink_boss", MenuText = "Parpadear solo para jefes" }, -- FIXME: Localización
     },
 };
 
@@ -426,7 +427,7 @@ function NeedToKnow.BarMenu_AddButton(barSettings, i_desc, i_parent)
     
     local varSettings = barSettings[info.value];
     if ( not varSettings and (item_type == "Check" or item_type == "Color") ) then
-        print (string.format("NTK: Could not find %s in", info.value), barSettings); 
+        print (string.format("NTK: No se pudo encontrar %s en", info.value), barSettings); 
         return
     end
     
